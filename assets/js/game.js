@@ -52,7 +52,7 @@ export function gamePage(level, userName) {
                      </div>
 
                      <div class="burger-menu" id="burgerMenu">
-                            <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar restart-btn restart">
+                            <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar restart-btn1 restart">
                               <i class="fas fa-rotate-right"></i>
                               <span>Restart</span>
                             </div>

@@ -387,7 +387,7 @@
       background-color: #555;
     }
 
-    @media (min-width: 600px) {
+    /* @media (min-width: 600px) {
       .menu {
         display: flex;
         flex-direction: row;
@@ -402,4 +402,4 @@
       .menu-btn {
         display: none;
       }
-    }
+    } */
