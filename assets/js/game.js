@@ -44,25 +44,32 @@ export function gamePage() {
     $(".game").html(`<div class="nav-bar">
                             <div class="moves-display main-menu-btn">Moves: ${moves}</div>
                             <div class="timer-display main-menu-btn">Time: 00:00</div>
-                               <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar  restart restart-btn">
-                                    <i class="fas fa-rotate-right"></i>
-                                    <span>Restart</span>
-                                </div>
-                                <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar back-level back-to-level ">
-                                  <i class="fab fa-deezer"></i>
-                                  <span>Level Selection</span>
-                                </div>
-                                    <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar back-menu back-to-menu ">
-                                  <i class="fas fa-bars"></i>
-                                  <span>Back to Menu</span>
-                                </div>
-                                    <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar sound-in-game sound">
-                                  <i class="fas fa-bullhorn"></i>
-                                  <span>Sound</span>
-                                </div>
-                        </div>
-                        <div class="game-body"></div>`);
-    $(".back-to-menu").on("click", () => mainmenu());
+                            <div class="burger-icon" onclick="toggleBurger()">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              </div>
+                     </div>
+
+                     <div class="burger-menu" id="burgerMenu">
+                            <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar restart-btn restart">
+                              <i class="fas fa-rotate-right"></i>
+                              <span>Restart</span>
+                            </div>
+                            <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar back-to-level back-level">
+                              <i class="fas fa-signal"></i>
+                              <span>Level Selection</span>
+                            </div>
+                            <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar back-to-menu back-menu">
+                              <i class="fas fa-arrow-left"></i>
+                              <span>Back to Menu</span>
+                            </div>
+                            <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar sound sound-in-game">
+                              <i class="fas fa-volume-up"></i>
+                              <span>Sound</span>
+                            </div>
+                      </div>
+                      <div class="game-body"></div>`);
     $(".back-to-level").on("click", () => startgamemenu());
     level = $(this).text();
     let  imageParameter;

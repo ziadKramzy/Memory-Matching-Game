@@ -552,4 +552,230 @@ h5 {
 .h2-not{
     margin-bottom: 10px;
 }
+
+
+/* side bar */
+.burger-container {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.burger-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(60, 23, 23);
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #444;
+  width: 100%;
+}
+
+.burger-menu .sidebar-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: white;
+  border-top: 1px solid #555;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.burger-menu .sidebar-btn:hover {
+  background-color: #555;
+}
+
+.main-menu-btn-sidebar {
+  width: 14px;
+  margin: 0px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: absolute;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sidebar-btn:hover {
+  width: fit-content;
+}
+.sidebar-btn span {
+  margin-left: 10px;
+  display: none;
+  white-space: nowrap;
+}
+.sidebar-btn:hover span {
+  display: inline-block;
+}
+.sidebar-btn:hover {
+  width: fit-content;
+}
+.sidebar-btn span {
+  margin-left: 10px;
+  display: none;
+  white-space: nowrap;
+}
+.sidebar-btn:hover span {
+  display: inline-block;
+}
+
+
+
+/* Burger Menu Media Query */
+
+
+@media (max-width: 1440px) {
+  .restart-btn {
+    top: 35%;
+    left: 0;
+  }
+  .back-level {
+    top: 40%;
+       left: 0;
+  }
+  .back-menu {
+    top: 45%;
+       left: 0;
+  }
+  .sound-in-game {
+    top: 50%;
+       left: 0;
+  }
+  .burger-menu{
+    display: flex ;
+  }
+}
+@media (max-width: 780px) {
+  .nav-bar {
+    width: 100%;
+    align-items: center;
+  }
+  .sidebar-btn:hover span {
+  display: none;
+}
+  .nav-bar .moves-display {
+    margin-left: 0;
+    /* padding-left: ; */
+  }
+  .nav-bar .timer-display {
+    margin-right: 13px;
+    width: 141px;
+  }
+  .burger-icon {
+    background-color: rgba(112, 6, 6, 0.91) !important;
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+  }
+  .burger-icon div {
+    background-color: rgba(184, 161, 31, 0.862);
+  }
+  .burger-menu {
+    position: relative;
+    
+  }
+  .restart-btn {
+    top: -103px;
+    left: 0;
+  }
+  .back-level {
+    top: -103px;
+
+    left:65px;
+  }
+  .back-menu {
+    top: -103px;
+
+    left: 130px;
+  }
+  .sound-in-game {
+    top: -103px;
+
+    left: 195px;
+  }
+}
+@media (max-width: 550px) {
+  .nav-bar {
+    width: 78%;
+    align-items: center;
+  }
+  .nav-bar .moves-display {
+    margin-left: 0;
+    margin-right: 5px;
+    text-align: center;
+    width: 140px;
+    font-size: 11px;
+    /* padding-left: ; */
+  }
+  .nav-bar .timer-display {
+    margin-inline: 5px;
+    width: 160px;
+    font-size: 11px;
+    text-align: center;
+  }
+  .burger-icon {
+
+    width: 70px;
+    height: 40px;
+
+  }
+  .burger-icon div {
+    background-color: rgba(184, 161, 31, 0.862);
+  }
+  .burger-menu {
+    position: relative;
+    width: 78%;
+    top: 16px;
+  }
+  .restart-btn {
+    top: -103px;
+    left: 0;
+  }
+  .back-level {
+    top: -103px;
+
+    left:65px;
+  }
+  .back-menu {
+    top: -103px;
+
+    left: 130px;
+  }
+  .sound-in-game {
+    top: -103px;
+
+    left: 195px;
+  }
+}
+
+
+
+
 /* End */
+
+

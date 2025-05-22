@@ -1,65 +1,65 @@
 .parent-Easy {
- display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 8px;
-    width: 1100px;
-    max-height: 1000px; 
-    margin: auto;
-    position: relative; 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+  width: 1100px;
+  max-height: 1000px;
+  margin: auto;
+  position: relative;
 }
 .parent-Normal {
   display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 8px;
-    width: 1100px;
-    max-height: 1000px; 
-    margin: auto;
-    position: relative; 
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+  width: 1100px;
+  max-height: 1000px;
+  margin: auto;
+  position: relative;
 }
 .parent-Difficult {
-    display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        gap: 8px;
-        width: 1100px;
-        max-height: 1000px; 
-        margin: auto;
-        position: relative;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 8px;
+  width: 1100px;
+  max-height: 1000px;
+  margin: auto;
+  position: relative;
 }
 .card-Easy {
-   position: relative;
-    width: 100%; /* Adjust size as needed */
-    height: 140px; /* Adjust size as needed */
-    perspective: 1000px;
-    cursor: pointer;
+  position: relative;
+  width: 100%; /* Adjust size as needed */
+  height: 140px; /* Adjust size as needed */
+  perspective: 1000px;
+  cursor: pointer;
 }
 
 .card-Normal {
-    position: relative;
-    width: 100%; /* Adjust size as needed */
-    height: 120px; /* Adjust size as needed */
-    perspective: 1000px;
-    cursor: pointer;
+  position: relative;
+  width: 100%; /* Adjust size as needed */
+  height: 120px; /* Adjust size as needed */
+  perspective: 1000px;
+  cursor: pointer;
 }
 .card-Difficult {
-    position: relative;
-    width: 100%; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
-    perspective: 1000px;
-    cursor: pointer;
+  position: relative;
+  width: 100%; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  perspective: 1000px;
+  cursor: pointer;
 }
 
-
-
-.back-img , .front-img {
+.back-img,
+.front-img {
   display: block;
   image-rendering: auto;
 }
 .card-front,
 .card-back,
-.back-img,.front-img {
+.back-img,
+.front-img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -68,90 +68,144 @@
   transition: transform 0.6s;
 }
 
-
 .card-front {
-    transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .card-back {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.card-Easy.flipped .card-front, .card-Normal.flipped .card-front, .card-Difficult.flipped .card-front   {
-    transform: rotateY(180deg);
+.card-Easy.flipped .card-front,
+.card-Normal.flipped .card-front,
+.card-Difficult.flipped .card-front {
+  transform: rotateY(180deg);
 }
 
-.card-Easy.flipped .card-back, .card-Normal.flipped .card-back, .card-Difficult.flipped .card-back {
-    transform: rotateY(0deg);
+.card-Easy.flipped .card-back,
+.card-Normal.flipped .card-back,
+.card-Difficult.flipped .card-back {
+  transform: rotateY(0deg);
 }
-
 
 @media (max-width: 1440px) {
-    .parent-Easy {
-        gap: 6px;
-        width: 880px;
-        height: 100;
-        
-    }
-    
-    .card-Easy{
-        height: 90px;
-        width: 216px;
-    }
+  .parent-Easy {
+    gap: 6px;
+    width: 880px;
+    height: 100;
+  }
+
+  .card-Easy {
+    height: 90px;
+    width: 216px;
+  }
 }
 
 @media (max-width: 970px) {
-    .parent-Easy {
-        width: 768px;
-           gap: 4px; 
-        }
+  .parent-Easy {
+    width: 768px;
+    gap: 4px;
+  }
 
-        .card-Easy {
-            height: 100px;
-            width: 190px;
-        }
-    }
-    
-    @media (max-width: 830px) {
-        .parent-Easy {
-            width: 650px;
-        }
-        
-        .card-Easy {
-            height: 90px;
-            width: 150px;
-        }}
-        @media (max-width: 710px) {
-            .parent-Easy {
-                width: 477px;
-            }
-            
-            .card-Easy {
-                height: 90px;
-    width: 116px;
+  .card-Easy {
+    height: 100px;
+    width: 190px;
+  }
 }
+
+@media (max-width: 830px) {
+  .parent-Easy {
+    width: 650px;
+  }
+
+  .card-Easy {
+    height: 90px;
+    width: 150px;
+  }
+}
+@media (max-width: 710px) {
+  .parent-Easy {
+    width: 477px;
+  }
+
+  .card-Easy {
+    height: 90px;
+    width: 116px;
+  }
 }
 @media (max-width: 550px) {
-    .parent-Easy {
-        width: 370px;
-    }
-    
-    .card-Easy {
-        height: 90px;
-        width: 90px;
-    }
+  .parent-Easy {
+    width: 370px;
+  }
+
+  .card-Easy {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+/* Responsive 4*4  */
+@media (max-width: 1440px) {
+  .parent-Easy {
+    gap: 6px;
+    width: 880px;
+    height: 100;
+  }
+
+  .card-Easy {
+    height: 90px;
+    width: 216px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .parent-Easy {
+    width: 768px;
+    gap: 4px;
+  }
+
+  .card-Easy {
+    height: 100px;
+    width: 190px;
+  }
+}
+
+@media (max-width: 891px) {
+  .parent-Easy {
+    width: 650px;
+  }
+
+  .card-Easy {
+    height: 90px;
+    width: 150px;
+  }
+}
+@media (max-width: 780px) {
+  .parent-Easy {
+    width: 477px;
+  }
+
+  .card-Easy {
+    height: 90px;
+    width: 116px;
+  }
+}
+@media (max-width: 550px) {
+  .parent-Easy {
+    width: 370px;
+  }
+
+  .card-Easy {
+    height: 90px;
+    width: 90px;
+  }
 }
 
 /* Responsive 4*4  */
 
-
-
-
-
-
 /* Responsive 6*6  */
 
- @media (max-width: 1440px) {
+@media (max-width: 1440px) {
   .parent-Normal {
     gap: 6px;
     width: 933px;
@@ -162,7 +216,7 @@
     width: 150px;
   }
 }
-@media (max-width: 997px) {
+@media (max-width: 1055px) {
   .parent-Normal {
     gap: 4px;
     width: 715px;
@@ -173,118 +227,179 @@
     width: 114px;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 845px) {
   .parent-Normal {
-        gap: 2px;
-        width: 540px;
+    gap: 2px;
+    width: 540px;
   }
 
   .card-Normal {
-        height: 85px;
-        width: 88px;
+    height: 85px;
+    width: 88px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .parent-Normal {
-                gap: 1px;
-        width: 420px;
+    gap: 1px;
+    width: 377px;
   }
 
   .card-Normal {
-      height: 80px;
-        width: 70px;
+    height: 80px;
+    width: 62px;
   }
-} 
+}
 
 /* Responsive 6*6  */
 
-
-
-
-
 /* Responsive 8*8  */
 
-
 @media (max-width: 1440px) {
-    .parent-Difficult {
-        gap: 3px;
-        width: 1150px;
-    }
-    
-    .card-Difficult {
-        height: 68px;
-        width: 141px;
-    }
-}
-@media (max-width: 1210px) {
-    .parent-Difficult {
-        gap: 2px;
-        width: 950px;
-    }
-    
-    .card-Difficult {
-        height: 68px;
-        width: 117px;
-    }
-}
-@media (max-width: 1010px) {
-    .parent-Difficult {
-        gap: 1px;
-        width: 810px;
-    }
-    
-    .card-Difficult {
-        height: 68px;
-        width: 100px;
-    }
-}
-@media (max-width: 870px) {
-    .parent-Difficult {
-        gap: 0px;
-        width: 665px;
-    }
-    
-    .card-Difficult {
-        height: 68px;
-        width: 83px;
+  .parent-Difficult {
+    gap: 3px;
+    width: 1150px;
+  }
 
-    }
+  .card-Difficult {
+    height: 68px;
+    width: 141px;
+  }
 }
-@media (max-width:  725px) {
-    .parent-Difficult {
-        gap: 0px;
-        width: 535px;
-    }
-    
-    .card-Difficult {
-height: 68px;
-        width: 66px;
+@media (max-width: 1290px) {
+  .parent-Difficult {
+    gap: 2px;
+    width: 950px;
+  }
 
-    }
+  .card-Difficult {
+    height: 68px;
+    width: 117px;
+  }
 }
-@media (max-width:  600px) {
-    .parent-Difficult {
-gap: 0px;
-        width: 450px;
-    }
-    
-    .card-Difficult {
-        height: 66px;
-        width: 56px;
+@media (max-width: 1080px) {
+  .parent-Difficult {
+    gap: 1px;
+    width: 810px;
+  }
 
-    }
-} 
-    /* Responsive 8*8  */
+  .card-Difficult {
+    height: 68px;
+    width: 100px;
+  }
+}
+@media (max-width: 955px) {
+  .parent-Difficult {
+    gap: 0px;
+    width: 665px;
+  }
+
+  .card-Difficult {
+    height: 68px;
+    width: 83px;
+  }
+}
+@media (max-width: 790px) {
+  .parent-Difficult {
+    gap: 0px;
+    width: 535px;
+  }
+
+  .card-Difficult {
+    height: 68px;
+    width: 66px;
+  }
+}
+@media (max-width: 600px) {
+  .parent-Difficult {
+    gap: 0px;
+    width: 450px;
+  }
+
+  .card-Difficult {
+    height: 66px;
+    width: 56px;
+  }
+}
+/* Responsive 8*8  */
 
 /* Copy the keyframes if not already present */
 @keyframes valorant-glow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.card-Easy:hover, .card-Normal:hover, .card-Difficult:hover {
-    transform: scale(1.03);
-    box-shadow: 1px 1px 12px black ;
-    transition: transform 0.3s;
+.card-Easy:hover,
+.card-Normal:hover,
+.card-Difficult:hover {
+  transform: scale(1.03);
+  box-shadow: 1px 1px 12px black;
+  transition: transform 0.3s;
 }
+
+  .navbar {
+      background-color: #333;
+      overflow: hidden;
+      position: relative;
+      padding: 10px 20px;
+    }
+
+    .menu-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .menu-btn div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .menu a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      border-top: 1px solid #555;
+    }
+
+    .menu a:hover {
+      background-color: #555;
+    }
+
+    @media (min-width: 600px) {
+      .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+      }
+
+      .menu a {
+        border: none;
+      }
+
+      .menu-btn {
+        display: none;
+      }
+    }
