@@ -51,7 +51,7 @@ export function updateTimer() {
 
 
 
-export function renderPage(level, imageArr) {
+export function renderPage(level, imageArr, userName) {
     if (!container[0]) return;
     $(container[0]).html('');
     var currentLevel = {lvl: level, images: imageArr};
@@ -132,7 +132,7 @@ export function renderPage(level, imageArr) {
                         
                         if (matchedPairs === currentLevel.images.length) {
                             clearInterval(gameTimer);
-                            showGameCompletion(moves, minutes, seconds, level, currentLevel);
+                            showGameCompletion(moves, minutes, seconds, level, currentLevel, userName);
                             sounds.completion.currentTime = 0;
                             sounds.completion.play();
                         }

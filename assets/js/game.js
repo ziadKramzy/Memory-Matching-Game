@@ -39,7 +39,7 @@ var cardsImages = [
 ];
 
 // game page function
-export function gamePage() {
+export function gamePage(level, userName) {
     $(".game").html('')
     $(".game").html(`<div class="nav-bar">
                             <div class="moves-display main-menu-btn">Moves: ${moves}</div>
@@ -70,8 +70,10 @@ export function gamePage() {
                             </div>
                       </div>
                       <div class="game-body"></div>`);
+    $(".back-to-menu").on("click", () => mainmenu(userName));
     $(".back-to-level").on("click", () => startgamemenu());
-    level = $(this).text();
+    // level = $(this).text();
+    console.log(level)
     let  imageParameter;
     if (level === "Easy") {
         imageParameter = cardsImages.sort(() => Math.random() - 0.5).slice(0, 8);
@@ -80,11 +82,13 @@ export function gamePage() {
     } else if (level === "Difficult") {
         imageParameter = cardsImages;
     }
+    console.log(imageParameter)
     $(".restart-btn").on("click", function () {
         resetTimer();
         startTimer();
-        renderPage(level, imageParameter);
+        renderPage(level, imageParameter, userName);
     });
     // Render the game
-    renderPage(level, imageParameter);
+    console.log(imageParameter);
+    renderPage(level, imageParameter, userName);
 }

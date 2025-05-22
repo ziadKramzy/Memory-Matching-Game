@@ -1,10 +1,10 @@
-// import { saveScore } from "./leaderboard.js";
+import { saveScore } from "./leaderboard.js";
 import { resetTimer, startTimer, renderPage } from "./render.js";
 import { mainmenu } from "./mainmenu.js";
 
 // Function to show game completion notification
-export function showGameCompletion(moves, minutes, seconds, level, currentLevel) {
-    // saveScore(moves, $(".timer-display").text(), level);
+export function showGameCompletion(moves, minutes, seconds, level, currentLevel, userName) {
+    saveScore(moves, $(".timer-display").text(), level, userName);
     const notification = document.createElement('div');
     notification.className = 'game-completion';
     notification.innerHTML = `
@@ -20,7 +20,7 @@ export function showGameCompletion(moves, minutes, seconds, level, currentLevel)
         notification.remove();
         resetTimer();
         startTimer();
-        renderPage(currentLevel.lvl, currentLevel.images);
+        renderPage(currentLevel.lvl, currentLevel.images, userName);
     });
     notification.querySelector('.menu-btn').addEventListener('click', () => {
         notification.remove();
