@@ -646,7 +646,7 @@ h5 {
 /* Burger Menu Media Query */
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1920px) {
   .restart-btn {
     top: 35%;
     left: 0;
