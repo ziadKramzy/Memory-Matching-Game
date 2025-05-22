@@ -25,6 +25,6 @@ export function showGameCompletion(moves, minutes, seconds, level, currentLevel,
     notification.querySelector('.menu-btn').addEventListener('click', () => {
         notification.remove();
         resetTimer();
-        mainmenu();
+        mainmenu(userName);
     });
 }
