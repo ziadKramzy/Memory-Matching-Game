@@ -6,7 +6,7 @@
 body {
     box-sizing: border-box;
     min-height: 100vh;
-    background-image: url("../images/marvelbg1.jpg");
+    background-image: url("../images/marvelbg5.png");
     background-position: center;
     background-size: cover;
 }
@@ -134,7 +134,50 @@ body {
     background: linear-gradient(90deg, #ff4655 0%, #0f1923 100%);
 }
 /* End */
+/* Game Page */
+.nav-bar {
+    display: flex;
+}
 
+.back-to-menu, .back-to-level, .moves-display, .timer-display {
+    width: auto;
+}
+
+.game-completion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 2000;
+    min-width: 300px;
+}
+
+table {
+    color: #fff;
+}
+
+tr {
+    padding: 10px 0;
+    display: flex;
+    border-top: 1px solid #fff;
+}
+
+tr:first-child {
+    border-top: 0
+}
+
+th, td {
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* End */
 /* Modal */
 .about-content {
     background: #0f1923;
@@ -171,7 +214,7 @@ h1{
 }
 
 h1, h2, h5 {
-    color: #ff4655;
+    color: #da1425;
     text-shadow: 0 2px 12px #000, 0 0 2px #fff;
     font-family: 'Orbitron', 'Muli', Arial, sans-serif;
     letter-spacing: 4px;
@@ -506,4 +549,7 @@ h5 {
     cursor: pointer;
 }
 
+.h2-not{
+    margin-bottom: 10px;
+}
 /* End */

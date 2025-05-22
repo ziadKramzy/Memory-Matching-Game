@@ -3,6 +3,9 @@ import { startgamemenu, aboutOverlay } from "./mainmenu.js";
 import { changeBG } from "./background.js";
 import showSoundOverlay from "./sounds.js";
 import { mainmenu } from "./mainmenu.js";
+import { gamePage } from "./game.js";
+
+
 // global variables
 var userName = "";
 
@@ -14,6 +17,7 @@ $(".game").on("click", ".background-btn", changeBG);
 $(".game").on("click", ".sound",  showSoundOverlay);
 $(".game").on("click", ".about-btn", aboutOverlay);
 $(".game").on("click", ".back", () => mainmenu(userName));
+$(".game").on("click", ".render-page", gamePage)
 
 
 

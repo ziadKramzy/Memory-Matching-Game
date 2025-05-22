@@ -282,3 +282,9 @@ gap: 0px;
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+.card-Easy:hover, .card-Normal:hover, .card-Difficult:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 1px 12px black ;
+    transition: transform 0.3s;
+}
