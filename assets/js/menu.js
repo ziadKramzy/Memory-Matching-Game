@@ -1,3 +1,5 @@
+import { mainmenu } from "./mainmenu.js";
+
 export function registeration() {
     $(".game").html(`
         <h1 class="typewrite" data-text="MARVEL"></h1>
@@ -11,22 +13,19 @@ export function registeration() {
     typeAll();
 }
 
-
-
 export function getName() {
     var userName = $("#input-name").val()
     if (userName.length == 0) {
         $(".p-name").css("opacity", 1);
     } else { 
         $(".p-name").css("opacity", 0);
-        $(".game").html(``);                    // call main menu here
+        mainmenu(userName);                             // call main menu here
         return userName;
     }
 }
 
 // write typeall here
-
-function typeAll() {
+export function typeAll() {
     const elements = document.querySelectorAll('.typewrite');
     let delay = 0;
     elements.forEach(el => {
