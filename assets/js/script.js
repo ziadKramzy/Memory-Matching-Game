@@ -3,7 +3,6 @@ import { startgamemenu, aboutOverlay } from "./mainmenu.js";
 import { changeBG } from "./background.js";
 import showSoundOverlay from "./sounds.js";
 import { mainmenu } from "./mainmenu.js";
-
 // global variables
 var userName = "";
 
