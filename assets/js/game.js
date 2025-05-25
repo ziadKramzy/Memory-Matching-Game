@@ -2,6 +2,7 @@ import { renderPage, startTimer, resetTimer } from "./render.js";
 import { mainmenu, startgamemenu } from "./mainmenu.js";
 
 let moves = 0;
+let level = "difficult";
 var cardsImages = [
     "./assets/images/altron.jpg",
     "./assets/images/blackwidow.jpg",
