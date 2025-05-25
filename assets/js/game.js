@@ -2,7 +2,6 @@ import { renderPage, startTimer, resetTimer } from "./render.js";
 import { mainmenu, startgamemenu } from "./mainmenu.js";
 
 let moves = 0;
-let level = "difficult";
 var cardsImages = [
     "./assets/images/altron.jpg",
     "./assets/images/blackwidow.jpg",
@@ -52,7 +51,7 @@ export function gamePage(level, userName) {
                      </div>
 
                      <div class="burger-menu" id="burgerMenu">
-                            <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar restart-btn1 restart">
+                            <div class="sidebar-btn main-menu-btn main-menu-btn-sidebar restart-btn1 restart-btn">
                               <i class="fas fa-rotate-right"></i>
                               <span>Restart</span>
                             </div>
